@@ -19,17 +19,22 @@ export default function Filter() {
             onPress={() => Alert.alert("Simple Button pressed")}
           />
         </TouchableOpacity>
-
-        <Button
-          title="Press me"
-          onPress={() => Alert.alert("Simple Button pressed")}
-        />
-        <Button
-          title="Press me"
-          onPress={() => Alert.alert("Simple Button pressed")}
-        />
+        <TouchableOpacity style={[style.filtreBtns, style.disabledFilter]}>
+          <Button
+            color="white"
+            title="Press me"
+            onPress={() => Alert.alert("Simple Button pressed")}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity style={[style.filtreBtns, style.disabledFilter]}>
+          <Button
+            color="white"
+            title="Press me"
+            onPress={() => Alert.alert("Simple Button pressed")}
+          />
+        </TouchableOpacity>
+        <FontAwesome name="filter" width={30} height={30}/>
       </View>
-      {/* <View style={style.line}></View> */}
     </View>
   );
 }
@@ -56,6 +61,7 @@ const style = StyleSheet.create({
     // alignItems:'center',
     flexDirection: "row",
     justifyContent: "center",
+    gap:4
   },
 
   filtreBtns: {
@@ -63,5 +69,18 @@ const style = StyleSheet.create({
     backgroundColor: "green",
     borderRadius: 5,
     height: 50,
+  },
+
+  disabledFilter: {
+    padding: 5,
+    backgroundColor: "gray",
+    borderRadius: 5,
+    height: 50,
+  },
+
+  separator: {
+    marginVertical: 8,
+    borderBottomColor: '#737373',
+    borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
