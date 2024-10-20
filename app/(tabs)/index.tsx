@@ -8,7 +8,7 @@ export default function index() {
   return (
     <View style={style.container}>
         <Header/>
-        <Filter/>
+        <Search/>
     </View>
   )
 }

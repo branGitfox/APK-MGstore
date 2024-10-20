@@ -25,7 +25,7 @@ export default function Header() {
         </View>
       </View>
       <View>
-        <Search />
+   
         <TextInput/>
       </View>
     </View>
