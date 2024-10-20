@@ -1,37 +1,67 @@
-import { View , Text, TextInput,StyleSheet} from "react-native";
+import {
+  View,
+  StyleSheet,
+  Button,
+  Alert,
+  TouchableOpacity,
+} from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 
 export default function Filter() {
   return (
     <View style={style.container}>
-        <TextInput style={style.input}
-        placeholder="brandon"
+      <View style={style.filtreContainer}>
+        <TouchableOpacity style={style.filtreBtns}>
+          <Button
+            color="white"
+            title="Press me"
+            onPress={() => Alert.alert("Simple Button pressed")}
+          />
+        </TouchableOpacity>
+
+        <Button
+          title="Press me"
+          onPress={() => Alert.alert("Simple Button pressed")}
         />
-        <FontAwesome name="search" size={28} color="green"/>
+        <Button
+          title="Press me"
+          onPress={() => Alert.alert("Simple Button pressed")}
+        />
+      </View>
+      {/* <View style={style.line}></View> */}
     </View>
-  )
+  );
 }
 
-const style= StyleSheet.create({
+const style = StyleSheet.create({
+  //style du separateur
+  line: {
+    flex: 1,
+    borderBottomColor: "black",
+    backgroundColor: "gray",
+    width: 100,
+    height: 1,
+  },
 
-  //style de la barre de recherche 
+  container: {
+    flex: 1,
+    // flexDirection:'row',
+    padding: 10,
+  },
 
-    input:{
-        padding:20,
-        flex:1,
-        height: 40,
-        borderWidth: 1,  
-        borderRadius:30,
-        borderColor:'green'
-    },
+  filtreContainer: {
+    flex: 1,
+    // padding:10,
+    // alignItems:'center',
+    flexDirection: "row",
+    justifyContent: "center",
+  },
 
-    container :{
-        flexDirection:'row',
-        gap:10,
-        padding:12,
-        alignItems:'center'
-    }
-})
-
-
+  filtreBtns: {
+    padding: 5,
+    backgroundColor: "green",
+    borderRadius: 5,
+    height: 50,
+  },
+});
