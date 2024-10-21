@@ -15,21 +15,21 @@ export default function Filter() {
         <TouchableOpacity style={style.filtreBtns}>
           <Button
             color="white"
-            title="Press me"
+            title="Vestimentaires"
             onPress={() => Alert.alert("Simple Button pressed")}
           />
         </TouchableOpacity>
         <TouchableOpacity style={[style.filtreBtns, style.disabledFilter]}>
           <Button
             color="white"
-            title="Press me"
+            title="Technos"
             onPress={() => Alert.alert("Simple Button pressed")}
           />
         </TouchableOpacity>
         <TouchableOpacity style={[style.filtreBtns, style.disabledFilter]}>
           <Button
             color="white"
-            title="Press me"
+            title="Autres"
             onPress={() => Alert.alert("Simple Button pressed")}
           />
         </TouchableOpacity>
@@ -54,12 +54,14 @@ const style = StyleSheet.create({
    
   },
 
+  //style du container 
   container: {
     flex: 1,
     // flexDirection:'row',
     padding: 10,
   },
 
+  //style du container des filtes
   filtreContainer: {
     flex: 1,
     // padding:10,
@@ -71,23 +73,21 @@ const style = StyleSheet.create({
     
   },
 
+  //style du boutton de filtre active
   filtreBtns: {
     padding: 5,
     backgroundColor: "green",
-    borderRadius: 5,
+    borderRadius: 30,
     height: 50,
+    shadowColor:'black',
+    shadowOpacity:.4
   },
 
+  //style du boutton des filtres non-actives
   disabledFilter: {
     padding: 5,
     backgroundColor: "gray",
-    borderRadius: 5,
+    borderRadius: 30,
     height: 50,
-  },
-
-  separator: {
-    marginVertical: 8,
-    borderBottomColor: '#737373',
-    borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });

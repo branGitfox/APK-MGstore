@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import Header from '@/components/Header'
 import Search from '@/components/Search'
 import Filter from '@/components/Filter'
-import Product from '@/components/Product'
+import Product from '@/components/Products'
 
 export default function index() {
   return (
