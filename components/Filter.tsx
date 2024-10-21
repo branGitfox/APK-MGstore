@@ -34,6 +34,8 @@ export default function Filter() {
           />
         </TouchableOpacity>
         <FontAwesome name="filter" width={30} height={30}/>
+
+      <View style={style.line}/>
       </View>
     </View>
   );
@@ -45,8 +47,11 @@ const style = StyleSheet.create({
     flex: 1,
     borderBottomColor: "black",
     backgroundColor: "gray",
-    width: 100,
-    height: 1,
+    width: 250,
+    height: .5,
+    position:'absolute',
+    top:80,
+   
   },
 
   container: {
@@ -61,7 +66,9 @@ const style = StyleSheet.create({
     // alignItems:'center',
     flexDirection: "row",
     justifyContent: "center",
-    gap:4
+    gap:4,
+    
+    
   },
 
   filtreBtns: {

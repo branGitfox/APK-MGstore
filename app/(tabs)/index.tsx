@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import Header from '@/components/Header'
 import Search from '@/components/Search'
 import Filter from '@/components/Filter'
+import Product from '@/components/Product'
 
 export default function index() {
   return (
@@ -10,6 +11,7 @@ export default function index() {
         <Header/>
         <Search/>
         <Filter/>
+        <Product/>
     </View>
   )
 }
@@ -18,6 +20,7 @@ export default function index() {
 const style = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor:'white'
+    backgroundColor:'whitesmoke',
+    position:'relative',
   }
 })

@@ -33,11 +33,13 @@ export default function Header() {
 }
 
 const style = StyleSheet.create({
+  //logo de l'application
   logo: {
     width: 90,
     height: 90,
   },
 
+  //style du container parent
   container: {
     flexDirection: "row",
     height: 90,
@@ -47,12 +49,14 @@ const style = StyleSheet.create({
     padding: 10,
   },
 
+  //style du nom de l'application
   title: {
     color: "white",
     fontSize: 20,
     fontWeight: "bold",
   },
 
+  //style container parent gauche
   left: {
     flex: 2 / 3,
     flexDirection: "row",
@@ -60,10 +64,12 @@ const style = StyleSheet.create({
     justifyContent: "space-between",
   },
 
+  //style de l'icon shop
   shop: {
     paddingRight: 10,
   },
 
+  //style de la barre de recherche
   search:{
     textAlign:'center'
   }
