@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
-f
+
 /**
  *Va retourner le composant de navigation
  *
@@ -9,7 +9,7 @@ f
  */
 export default function Footer({nav}) {
   const navig = () => {
-    nav.navigate('Test')
+    nav.navigate('Panier')
   }
   return (
     <View style={styles.container}>
