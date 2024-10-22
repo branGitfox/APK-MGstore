@@ -1,20 +1,23 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
-
+f
 /**
  *Va retourner le composant de navigation
  *
  * @export Footer
  * @return {Footer} 
  */
-export default function Footer() {
+export default function Footer({nav}) {
+  const navig = () => {
+    nav.navigate('Test')
+  }
   return (
     <View style={styles.container}>
       <TouchableOpacity>
         <FontAwesome name="home" size={28} color={"green"} />
       </TouchableOpacity>
       <TouchableOpacity>
-        <FontAwesome name="shopping-cart" size={28} color={"gray"} />
+        <FontAwesome name="shopping-cart" size={28} color={"gray"} onPress={navig} />
       </TouchableOpacity>
       <TouchableOpacity>
         <FontAwesome name="bell" size={25} color={"gray"} />

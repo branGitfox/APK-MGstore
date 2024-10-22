@@ -1,28 +1,22 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Header from '@/components/Header'
-import Search from '@/components/Search'
-import Filter from '@/components/Filter'
-import Product from '@/components/Products'
-import Footer from '@/components/Footer'
-//test
-export default function index() {
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Home from '@/components/Home';
+import Test from '@/components/Test';
+
+const Stack = createNativeStackNavigator();
+
+export default function  MyStack(){
   return (
-    <View style={style.container}>
-        <Header/>
-        <Search/>
-        <Filter/>
-        <Product/>
-        <Footer/>
-    </View>
-  )
-}
-
-
-const style = StyleSheet.create({
-  container:{
-    flex:1,
-    backgroundColor:'whitesmoke',
-    position:'relative',
-  }
-})
+    <NavigationContainer independent={true}>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{headerShown:false}}
+        />
+        <Stack.Screen name="Test" component={Test} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
