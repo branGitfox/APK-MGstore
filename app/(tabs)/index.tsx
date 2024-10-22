@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Search from '@/components/Search'
 import Filter from '@/components/Filter'
 import Product from '@/components/Products'
+import Footer from '@/components/Footer'
 
 export default function index() {
   return (
@@ -12,6 +13,7 @@ export default function index() {
         <Search/>
         <Filter/>
         <Product/>
+        <Footer/>
     </View>
   )
 }

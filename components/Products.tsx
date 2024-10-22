@@ -17,7 +17,7 @@ import { FontAwesome } from "@expo/vector-icons";
 export default function Product() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Nos Produits</Text>
+      <Text style={styles.title}>Nos Produits <FontAwesome name="star" size={20} color={'gold'}/></Text>
       <ScrollView style={{ paddingTop: 2 }}>
         <View style={styles.product}>
           <Image
@@ -40,13 +40,13 @@ export default function Product() {
             </View>
             <View style={styles.action}>
               <TouchableOpacity style={[styles.actionBtn, styles.look]}>
-                <Text style={styles.btntext}>Voir</Text>
+                <Text style={styles.btntext}>Voir <FontAwesome name="eye"/></Text>
               </TouchableOpacity>
               <TouchableOpacity style={[styles.actionBtn, styles.card]}>
-                <Text style={styles.btntext}>Vendre</Text>
+                <Text style={styles.btntext}>Panier <FontAwesome name="plus"/></Text>
               </TouchableOpacity>
               <TouchableOpacity style={[styles.actionBtn, styles.buy]}>
-                <Text style={styles.btntext}>Vendre</Text>
+                <Text style={styles.btntext}>Acheter <FontAwesome name="euro"/></Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -71,14 +71,14 @@ export default function Product() {
               </Text>
             </View>
             <View style={styles.action}>
-              <TouchableOpacity style={[styles.actionBtn, styles.look]}>
-                <Text style={styles.btntext}>Voir</Text>
+            <TouchableOpacity style={[styles.actionBtn, styles.look]}>
+                <Text style={styles.btntext}>Voir <FontAwesome name="eye"/></Text>
               </TouchableOpacity>
               <TouchableOpacity style={[styles.actionBtn, styles.card]}>
-                <Text style={styles.btntext}>Vendre</Text>
+                <Text style={styles.btntext}>Panier <FontAwesome name="plus"/></Text>
               </TouchableOpacity>
               <TouchableOpacity style={[styles.actionBtn, styles.buy]}>
-                <Text style={styles.btntext}>Vendre</Text>
+                <Text style={styles.btntext}>Acheter <FontAwesome name="euro"/></Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -92,10 +92,10 @@ const styles = StyleSheet.create({
   //style du container
   container: {
     position: "relative",
-    top: -70,
+    top: 50,
     padding: 20,
     width: 500,
-    height: 470,
+    height: 550,
     justifyContent: "center",
   },
 
