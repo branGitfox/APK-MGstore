@@ -10,11 +10,11 @@ export default function  MyStack(){
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Acceuil"
           component={Home}
           options={{headerShown:false}}
-        /> */}
+        />
         <Stack.Screen name="Panier" component={Shop} />
       </Stack.Navigator>
     </NavigationContainer>
