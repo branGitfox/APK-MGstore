@@ -1,6 +1,6 @@
 import { View, Text, Image, StyleSheet, TextInput } from "react-native";
-import { FontAwesome } from "@expo/vector-icons";
-import Search from "./Search";
+
+
 
 /**
  *
@@ -21,7 +21,7 @@ export default function Header() {
           <Text style={style.title}>MG-Store</Text>
         </View>
         <View style={style.shop}>
-          <FontAwesome name="shopping-cart" size={28} color="white" />
+          <Image style={style.userProfil} width={40} height={40} source={require('../assets/images/img1.avif')}/>
         </View>
       </View>
       <View>
@@ -58,7 +58,7 @@ const style = StyleSheet.create({
 
   //style container parent gauche
   left: {
-    flex: 2 / 3,
+    flex: 3/ 4,
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
@@ -72,5 +72,9 @@ const style = StyleSheet.create({
   //style de la barre de recherche
   search:{
     textAlign:'center'
+  },
+
+  userProfil:{
+    borderRadius:50
   }
 });

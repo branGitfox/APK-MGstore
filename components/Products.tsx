@@ -192,6 +192,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
 
+  //style de texte du prix des articles
   price:{
     color:'green',
     fontWeight:'condensed',
