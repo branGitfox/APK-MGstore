@@ -5,7 +5,14 @@ import Search from '@/components/Search'
 import Filter from '@/components/Filter'
 import Product from '@/components/Products'
 import Footer from '@/components/Footer'
-//test
+
+/**
+ *Le composant de la page d'acceuil
+ *
+ * @export Home
+ * @param {*} {navigation}
+ * @return {Home} 
+ */
 export default function Home({navigation}) {
   return (
     <View style={style.container}>

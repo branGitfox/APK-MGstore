@@ -11,6 +11,13 @@ import Product from "./Products";
 import { FontAwesome } from "@expo/vector-icons";
 import Footer from "./Footer";
 
+/**
+ *Le composant du panier
+ *
+ * @export ShoppingCart
+ * @param {*} { navigation }
+ * @return {ShoppingCart} 
+ */
 export default function ShoppingCart({ navigation }) {
   return (
     <View style={styles.container}>

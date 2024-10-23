@@ -7,7 +7,12 @@ import {
 } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-
+/**
+ *Le composant des filtres
+ *
+ * @export Filter
+ * @return {Filter} 
+ */
 export default function Filter() {
   return (
     <View style={style.container}>
