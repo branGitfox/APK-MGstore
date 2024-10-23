@@ -15,7 +15,7 @@ export default function Footer({nav}) {
   return (
     <View style={styles.container}>
       <TouchableOpacity>
-        <FontAwesome name="home" size={28} color={"green"} />
+        <FontAwesome name="home" size={28} color={"green"}  onPress={()=>navig('Acceuil')}/>
       </TouchableOpacity> 
       <TouchableOpacity>
         <FontAwesome name="tags" size={28} color={"gray"} onPress={()=>navig('Vendre')}/>
