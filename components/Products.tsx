@@ -37,6 +37,9 @@ export default function Product() {
               <Text>
                 Brandon fidelin <FontAwesome name="user" color={"gray"} />
               </Text>
+                <Text style={styles.price}>
+                  10000AR
+              </Text>
             </View>
             <View style={styles.action}>
               <TouchableOpacity style={[styles.actionBtn, styles.look]}>
@@ -68,6 +71,9 @@ export default function Product() {
               />
               <Text>
                 Nikita vanillie <FontAwesome name="user" color={"gray"} />
+              </Text>
+              <Text style={styles.price}>
+                  10000AR
               </Text>
             </View>
             <View style={styles.action}>
@@ -185,4 +191,10 @@ const styles = StyleSheet.create({
   btntext: {
     color: "white",
   },
+
+  price:{
+    color:'green',
+    fontWeight:'condensed',
+    marginLeft:80
+  }
 });
