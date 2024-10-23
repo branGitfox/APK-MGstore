@@ -1,0 +1,6 @@
+<key>NSPhotoLibraryUsageDescription</key>
+<string>Give $(MG-Store) permission to save photos</string>
+<key>NSCameraUsageDescription</key>
+<string>Give $(MG-Store) permission to access your camera</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Give $(MG-Store) permission to use your microphone</string>

@@ -1,4 +1,6 @@
-import { View ,StyleSheet, Text , TextInput} from "react-native"
+import React, { useState } from 'react';
+import { View ,StyleSheet, Text , TextInput, Button, Image} from "react-native"
+import * as ImagePicker from 'expo-image-picker';
 import Header from "./Header"
 import Footer from "./Footer"
 
@@ -9,6 +11,28 @@ import Footer from "./Footer"
  * @return {Sell} 
  */
 export default function Sell({navigation}) {
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+    const requestPermission = async () => {
+        const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();
+        if (status !== 'granted') {
+            alert("Désolé, nous avons besoin de permissions pour accéder à votre bibliothèque d'images !");
+        }
+    };
+
+    const pickImage = async () => {
+        await requestPermission();
+        const result = await ImagePicker.launchImageLibraryAsync({
+            mediaTypes: ImagePicker.MediaTypeOptions.All,
+            allowsEditing: true,
+            aspect: [4, 3],
+            quality: 1,
+        });
+
+        if (!result.canceled && result.assets && result.assets.length > 0) {
+            setSelectedImage(result.assets[0].uri);
+        }
+    };
   return (
     <View style={styles.container}>
         <Header/>
@@ -44,6 +68,13 @@ export default function Sell({navigation}) {
                 // onChangeText={text => onChangeText(text)}
                 // value={value}
                 />
+                <Button title="Choisir une image" onPress={pickImage} />
+                    {selectedImage && (
+                        <Image
+                            source={{ uri: selectedImage }}
+                            style={{ width: 200, height: 200, marginTop: 10 }}
+                        />
+                    )}
             </View>
         </View>
         <Footer nav={navigation}/>
