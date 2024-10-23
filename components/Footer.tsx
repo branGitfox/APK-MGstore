@@ -9,8 +9,8 @@ import { FontAwesome } from "@expo/vector-icons";
  * @return {Footer} 
  */
 export default function Footer({nav}) {
-  const navig = () => {
-    nav.navigate('Panier')
+  const navig = (page) => {
+    nav.navigate(page)
   }
   return (
     <View style={styles.container}>
@@ -18,13 +18,13 @@ export default function Footer({nav}) {
         <FontAwesome name="home" size={28} color={"green"} />
       </TouchableOpacity> 
       <TouchableOpacity>
-        <FontAwesome name="tags" size={28} color={"gray"} />
+        <FontAwesome name="tags" size={28} color={"gray"} onPress={()=>navig('Vendre')}/>
       </TouchableOpacity>
       <TouchableOpacity>
         <FontAwesome name="question" size={28} color={"gray"}  />
       </TouchableOpacity>
       <TouchableOpacity style={styles.ShoppingCart}>
-        <FontAwesome name="shopping-cart" size={20} color={"gray"} onPress={navig} />
+        <FontAwesome name="shopping-cart" size={20} color={"gray"} onPress={()=>navig('Panier')} />
       </TouchableOpacity>
       <TouchableOpacity>
         <FontAwesome name="bell" size={25} color={"gray"} />
@@ -37,8 +37,8 @@ export default function Footer({nav}) {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "white",
-    // height: 70,
     flex: 1,
+    height: 10,
     alignContent: "center",
     width: 350,
     margin: "auto",
@@ -50,6 +50,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     // alignItems:
     flexDirection: "row",
+    // position:'absolute',
+    // bottom:10,
+    // left:0,
+    // right:0
     
   },
 
