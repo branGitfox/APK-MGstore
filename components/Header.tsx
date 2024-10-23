@@ -21,7 +21,7 @@ export default function Header() {
           <Text style={style.title}>MG-Store</Text>
         </View>
         <View style={style.shop}>
-          <Image style={style.userProfil} width={40} height={40} source={require('../assets/images/img1.avif')}/>
+          <Image style={style.userProfil} width={50} height={50} source={require('../assets/images/img1.avif')}/>
         </View>
       </View>
       <View>
