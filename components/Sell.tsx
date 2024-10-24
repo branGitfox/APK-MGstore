@@ -75,23 +75,17 @@ export default function Sell({ navigation }) {
               <Picker.Item label="Autre" value="Autre" />
             </Picker>
           </View>
-          <TextInput
-            style={styles.input}
-            placeholderTextColor={"black"}
-            editable
-            placeholder="Rechercher..."
-            // onChangeText={text => onChangeText(text)}
-            // value={value}
-          />
           <Button title={"Choisir une image"} onPress={pickImage} />
           {selectedImage && (
             <Image
               source={{ uri: selectedImage }}
-              style={{ width: 200, height: 200, marginTop: 10, marginLeft: 80 }}
+              style={{ width: 200, height: 170, marginTop: 1, marginLeft: 80 }}
             />
           )}
         </View>
+      <Text style={styles.sellBtn}>Vendre</Text>
       </View>
+
       <Footer nav={navigation} />
     </View>
   );
@@ -134,7 +128,19 @@ const styles = StyleSheet.create({
     color: "black",
     shadowColor: "black",
     shadowOpacity: 0.2,
-    marginBottom: 30,
+    marginBottom: 20,
     // textAlign:'center'
   },
+
+  sellBtn:{
+    textAlign:'center',
+    marginBottom:20,
+    paddingRight:10,
+    paddingLeft:10,
+    paddingTop:10,
+    paddingBottom:10,
+    color:'white',
+    backgroundColor:'green',
+    borderRadius:21
+  }
 });
