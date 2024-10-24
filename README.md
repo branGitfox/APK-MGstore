@@ -6,6 +6,14 @@ MG-Store is a cross plateform that allows user to sell everything the want in co
 <img src='./assets/screenShoot/2.jpg' />
 <img src='./assets/screenShoot/1.jpg' />
 
+## Those are some code that i think may help in your react native development
+
+### For uploading image from phone galery using expo-image-picker
+<img src='./assets/screenShoot/code1.jpg' />
+
+### For having select TextInput using react native picker
+<img src='./assets/screenShoot/code2.jpg' />
+
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
