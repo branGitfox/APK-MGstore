@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { View ,StyleSheet, Text , TextInput, Button, Image} from "react-native"
 import * as ImagePicker from 'expo-image-picker';
+import { Picker } from '@react-native-picker/picker';
 import Header from "./Header"
 import Footer from "./Footer"
+import { FontAwesome } from '@expo/vector-icons';
 
 /**
  *Composant de la vente
@@ -43,7 +45,15 @@ export default function Sell({navigation}) {
                 <TextInput style={styles.input}
                 placeholderTextColor={'black'}  
                 editable
-                placeholder="Rechercher..."
+                placeholder="Nom de l'articles"
+                // onChangeText={text => onChangeText(text)}
+                // value={value}
+                />
+                 <TextInput style={styles.input}
+                placeholderTextColor={'black'}  
+                editable
+                placeholder="Prix"
+
                 // onChangeText={text => onChangeText(text)}
                 // value={value}
                 />
@@ -61,18 +71,11 @@ export default function Sell({navigation}) {
                 // onChangeText={text => onChangeText(text)}
                 // value={value}
                 />
-                 <TextInput style={styles.input}
-                placeholderTextColor={'black'}  
-                editable
-                placeholder="Rechercher..."
-                // onChangeText={text => onChangeText(text)}
-                // value={value}
-                />
-                <Button title="Choisir une image" onPress={pickImage} />
+                <Button title={'Choisir une image'} onPress={pickImage} />
                     {selectedImage && (
                         <Image
                             source={{ uri: selectedImage }}
-                            style={{ width: 200, height: 200, marginTop: 10 }}
+                            style={{ width: 200, height: 200, marginTop: 10, marginLeft:80 }}
                         />
                     )}
             </View>
@@ -93,7 +96,7 @@ const styles = StyleSheet.create({
         width:400,
         height:660,
         padding:10,
-        // backgroundColor:'red',
+      
         margin:'auto'
     },
 
@@ -114,7 +117,7 @@ const styles = StyleSheet.create({
         // flex:1,
         height: 40,
         borderWidth: 1,  
-        borderRadius:30,
+        borderRadius:10,
         borderColor:'green',
         color:'black',
         shadowColor:'black',
