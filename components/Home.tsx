@@ -20,7 +20,7 @@ export default function Home({navigation}) {
         <Search/>
         <Filter/>
         <Product/>
-        <Footer nav={navigation}/>
+        <Footer nav={navigation} current='home'/>
     </View>
   )
 }

@@ -86,7 +86,7 @@ export default function Sell({ navigation }) {
       <Text style={styles.sellBtn}>Vendre</Text>
       </View>
 
-      <Footer nav={navigation} />
+      <Footer nav={navigation} current={'sell'}/>
     </View>
   );
 }
