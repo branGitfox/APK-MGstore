@@ -111,7 +111,7 @@ const style = StyleSheet.create({
 
   //style de texte des bouttons
   btntext: {
-    color: "dark",
+    color: "white",
     position:'relative',
     top:-8,
     zIndex:1,
