@@ -73,7 +73,8 @@ export default function Product() {
                 Nikita vanillie <FontAwesome name="user" color={"gray"} />
               </Text>
               <Text style={styles.price}>
-                  10000AR
+                    10000Ar
+               
               </Text>
             </View>
             <View style={styles.action}>

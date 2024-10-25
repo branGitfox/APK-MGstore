@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "@/components/Home";
 import Shop from "@/components/ShoppingCart";
 import Sell from "@/components/Sell";
+import Loader from "@/components/Loader";
 
 const Stack = createNativeStackNavigator();
 
@@ -11,6 +12,11 @@ export default function MyStack() {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator>
+      <Stack.Screen
+          name="Loader"
+          component={Loader}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Acceuil"
           component={Home}
