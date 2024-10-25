@@ -1,10 +1,16 @@
-import React, { Component } from 'react'
-import { View, StyleSheet, Image} from 'react-native'
+import React, { Component, useEffect, useState } from 'react'
+import { View, StyleSheet, Image, ActivityIndicator} from 'react-native'
 
 export default function Loader({navigation}){
+    useEffect(()=>{
+        setTimeout(() =>{
+            navigation.navigate('Acceuil')
+        }, 2000)
+    })
   return (
     <View style={styles.container}>
         <Image style={styles.image} source={require('../assets/images/mgstore.png')}/>
+        <ActivityIndicator color={'white'}/>
     </View>
   )
 }
