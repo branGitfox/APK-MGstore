@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import Header from '@/components/Header'
 import Search from '@/components/Search'
 import Filter from '@/components/Filter'
@@ -27,6 +27,7 @@ export default function Home({navigation}) {
 
 
 const style = StyleSheet.create({
+  //style pour le  container
   container:{
     flex:1,
     backgroundColor:'whitesmoke',

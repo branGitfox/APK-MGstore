@@ -7,9 +7,9 @@ import {
   Image,
   TouchableOpacity,
 } from "react-native";
-import Product from "./Products";
+
 import { FontAwesome } from "@expo/vector-icons";
-import Footer from "./Footer";
+
 
 /**
  *Le composant du panier
@@ -163,6 +163,7 @@ export default function ShoppingCart({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+  //style du container
   container: {
     flex: 1,
     flexDirection: "column",
@@ -170,13 +171,17 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 
+  //style de l'image
   image: {
     borderRadius: 50,
   },
+
+  //style de l'image du produit
   productImage: {
     borderRadius: 10,
   },
 
+  //container des produits
   productContainer: {
     flex: 1,
     flexDirection: "column",
@@ -188,6 +193,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 
+  //container du profil
   profilContainer: {
     flex: 1,
     flexDirection: "row",
@@ -195,11 +201,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
+  //container du vendeur
   seller: {
     color: "black",
     fontWeight: 500,
   },
 
+  //container des infos du produit
   infoContainer: {
     flex: 1,
     flexDirection: "row",
@@ -207,6 +215,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
   },
 
+  //style du container du total des prix
   total: {
     flex: 1,
     justifyContent: "space-between",

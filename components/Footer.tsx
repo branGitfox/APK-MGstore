@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
 
@@ -35,6 +35,7 @@ export default function Footer({nav, current}) {
 }
 
 const styles = StyleSheet.create({
+  //style pour container
   container: {
     backgroundColor: "white",
     flex: 1,
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
     
   },
 
+  //style pour les composants du panier
   ShoppingCart:{
     position:'absolute',
     top:-300,

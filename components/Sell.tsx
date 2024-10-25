@@ -4,7 +4,7 @@ import * as ImagePicker from "expo-image-picker";
 import { Picker } from "@react-native-picker/picker";
 import Header from "./Header";
 import Footer from "./Footer";
-import { FontAwesome } from "@expo/vector-icons";
+// import { FontAwesome } from "@expo/vector-icons";
 
 /**
  *Composant de la vente
@@ -92,12 +92,14 @@ export default function Sell({ navigation }) {
 }
 
 const styles = StyleSheet.create({
+    //style du container
   container: {
     flex: 1,
     backgroundColor: "whitesmoke",
     position: "relative",
   },
 
+  //style pour le container de la formulaire
   formContainer: {
     width: 400,
     height: 660,
@@ -106,18 +108,21 @@ const styles = StyleSheet.create({
     margin: "auto",
   },
 
+  //style pour le titre de l'ecran
   title: {
     fontWeight: "bold",
     fontSize: 20,
     textAlign: "center",
   },
 
+  //style pour le container des inputs
   formGroup: {
     flex: 1,
     // backgroundColor:'green',
     padding: 10,
   },
 
+  //style des inputs
   input: {
     padding: 20,
     // flex:1,
@@ -132,6 +137,7 @@ const styles = StyleSheet.create({
     // textAlign:'center'
   },
 
+  //style pour le boutton submit
   sellBtn:{
     textAlign:'center',
     marginBottom:20,
