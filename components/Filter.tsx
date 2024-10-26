@@ -17,6 +17,11 @@ export default function Filter() {
   return (
     <View style={style.container}>
       <View style={style.filtreContainer}>
+      <TouchableOpacity style={[style.actionBtn, style.look]}>
+          <Text style={style.btntext}>
+            Toutes
+          </Text>
+        </TouchableOpacity>
         <TouchableOpacity style={[style.actionBtn, style.look]}>
           <Text style={style.btntext}>
             Vestimentaire
@@ -32,7 +37,7 @@ export default function Filter() {
             Culinaire
           </Text>
         </TouchableOpacity>
-        <FontAwesome name="filter" width={30} height={30} />
+        <FontAwesome name="filter" width={10} height={30} />
 
         <View style={style.line} />
       </View>
@@ -67,6 +72,7 @@ const style = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     gap: 4,
+    margin:'auto'
   },
 
   //style du boutton de filtre active
@@ -90,7 +96,7 @@ const style = StyleSheet.create({
   actionBtn: {
     // backgroundColor:'green',
     paddingVertical: 20,
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
     borderRadius: 30,
     shadowColor: "black",
     shadowOpacity: 0.4,
