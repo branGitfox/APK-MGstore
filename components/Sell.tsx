@@ -4,7 +4,7 @@ import * as ImagePicker from "expo-image-picker";
 import { Picker } from "@react-native-picker/picker";
 import Header from "./Header";
 import Footer from "./Footer";
-// import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
 
 /**
  *Composant de la vente
@@ -83,7 +83,7 @@ export default function Sell({ navigation }) {
             />
           )}
         </View>
-      <Text style={styles.sellBtn}>Vendre</Text>
+      <Text style={styles.sellBtn}>Vendre <FontAwesome size={15} name="tags"/></Text>
       </View>
 
       <Footer nav={navigation} current={'sell'}/>
@@ -147,6 +147,7 @@ const styles = StyleSheet.create({
     paddingBottom:10,
     color:'white',
     backgroundColor:'green',
-    borderRadius:21
+    borderRadius:21,
+    fontWeight:'bold'
   }
 });
