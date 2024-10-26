@@ -9,6 +9,7 @@ import {
   StyleSheet,
 } from "react-native";
 
+
 /**
  *Va retourner le composant de la page d'inscription
  *
@@ -85,6 +86,7 @@ export default function Sign({ navigation }) {
             onPress={() => redirect("Login")}
           />
         </View>
+            
       </View>
     </View>
   );
