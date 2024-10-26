@@ -8,7 +8,7 @@ import {
   Image,
   StyleSheet,
 } from "react-native";
-
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 /**
  *Va retourner le composant de la page d'inscription
@@ -86,7 +86,10 @@ export default function Sign({ navigation }) {
             onPress={() => redirect("Login")}
           />
         </View>
-            
+        <View style={styles.terms}>
+            <Text style={styles.termText}>Accepter les termes d'utilisation</Text>
+            <BouncyCheckbox style={styles.check} onPress={(isChecked: boolean) => {}} fillColor="green"/>
+        </View>
       </View>
     </View>
   );
@@ -166,8 +169,31 @@ const styles = StyleSheet.create({
     lineHeight: 43,
   },
 
+  //style du boutton de redirectio vers la page de connexion
   sign: {
     position: "relative",
     top: 400,
   },
+
+  //style du container du terme
+  terms:{
+    position:'relative',
+    top:450,
+  
+  },
+
+  //style du texte du checkbox
+  termText:{
+    // textDecorationColor:'underline',
+    textDecorationLine:"underline",
+    textAlign:'center'
+   
+  },
+
+  //style du boutton checkbox
+  check:{
+    position:'relative',
+    top:-20,
+    left:30
+  }
 });
