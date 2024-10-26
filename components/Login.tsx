@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
         height:250,
         margin:'auto',
         position:'relative',
-        top:-250
+        top:-250,
+        
     },
 
     //style du container de la formulaire
@@ -80,7 +81,9 @@ const styles = StyleSheet.create({
     title:{
         textAlign:'center',
         fontSize:30,
-        fontWeight:'bold'
+        fontWeight:'bold',
+        position:'relative',
+        top:30
     },
 
     //style du container de l'input
@@ -89,7 +92,9 @@ const styles = StyleSheet.create({
         flex:1,
         height:500,
         // backgroundColor:'red',
-        flexDirection:'column'
+        flexDirection:'column',
+        position:'relative',
+        top:30
     },
 
     //style des inputs
@@ -123,6 +128,6 @@ const styles = StyleSheet.create({
 
     sign:{
         position:'relative',
-        top:180
+        top:200
     }
 });
