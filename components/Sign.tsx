@@ -1,58 +1,50 @@
-import {
-  View,
-  TextInput,
-  TouchableOpacity,
-  StyleSheet,
-  Text,
-  Image,
-  Button
-} from "react-native";
+import React from 'react'
+import { View, Text, TextInput, Button, TouchableOpacity, Image, StyleSheet } from 'react-native'
 
 /**
- *Va returner le composant de connexion
+ *Va retourner le composant de la page d'inscription
  *
- * @export Login
- * @return {Login}
+ * @export Sign
+ * @return {Sign} 
  */
-export default function Login({navigation}) {
-
-  const redirect = (page:string):any => {
-    navigation.navigate(page)
-  }
+export default function Sign({navigation}) {
+    const redirect = (page:string):any => {
+        navigation.navigate(page)
+      }
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("../assets/images/mgstore.png")} />
-      <View style={styles.formContainer}>
-        <Text style={styles.title}>Se connecter</Text>
-        <View style={styles.formGroup}>
-        <TextInput
-            style={styles.input}
-            placeholderTextColor={"black"}
-            editable
-            placeholder="@adresse email..."
+    <Image style={styles.image} source={require("../assets/images/mgstore.png")} />
+    <View style={styles.formContainer}>
+      <Text style={styles.title}>Se connecter</Text>
+      <View style={styles.formGroup}>
+      <TextInput
+          style={styles.input}
+          placeholderTextColor={"black"}
+          editable
+          placeholder="@adresse email..."
 
-            // onChangeText={text => onChangeText(text)}
-            // value={value}
-          />
-                  <TextInput
-            style={styles.input}
-            placeholderTextColor={"black"}
-            editable
-            placeholder="Mot de passe..."
+          // onChangeText={text => onChangeText(text)}
+          // value={value}
+        />
+                <TextInput
+          style={styles.input}
+          placeholderTextColor={"black"}
+          editable
+          placeholder="Mot de passe..."
 
-            // onChangeText={text => onChangeText(text)}
-            // value={value}
-          />
-          <TouchableOpacity style={styles.logBtn}>
-                <Text style={styles.btnTitle}>Connexion</Text>
-          </TouchableOpacity>
-        </View> 
-        <View style={styles.sign}>
-            <Button title="Pas de compte? s'inscrire" onPress={() => redirect('Sign')}/>
-        </View>
+          // onChangeText={text => onChangeText(text)}
+          // value={value}
+        />
+        <TouchableOpacity style={styles.logBtn}>
+              <Text style={styles.btnTitle}>Connexion</Text>
+        </TouchableOpacity>
+      </View> 
+      <View style={styles.sign}>
+          <Button title="Pas de compte? s'inscrire" onPress={() => redirect('Login')}/>
       </View>
     </View>
-  );
+  </View>
+  )
 }
 
 const styles = StyleSheet.create({

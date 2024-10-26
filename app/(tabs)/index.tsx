@@ -6,6 +6,7 @@ import Shop from "@/components/ShoppingCart";
 import Sell from "@/components/Sell";
 import Loader from "@/components/Loader";
 import Login from "@/components/Login";
+import Sign from "@/components/Sign";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +14,7 @@ export default function MyStack() {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator>
-      <Stack.Screen
+        <Stack.Screen
           name="Loader"
           component={Loader}
           options={{ headerShown: false }}
@@ -29,9 +30,15 @@ export default function MyStack() {
           component={Sell}
           options={{ headerShown: false }}
         />
-                <Stack.Screen
+        <Stack.Screen
           name="Login"
           component={Login}
+          options={{ headerShown: false }}
+        />
+
+        <Stack.Screen
+          name="Sign"
+          component={Sign}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
