@@ -33,7 +33,7 @@
 
         "//": "Disables the microphone permission",
         "microphonePermission": false
-      }], "react-native-check-box"
+      }]
     ],
     "experiments": {
       "typedRoutes": true

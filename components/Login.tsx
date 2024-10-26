@@ -44,7 +44,7 @@ export default function Login({navigation}) {
             // value={value}
           />
           <TouchableOpacity style={styles.logBtn}>
-                <Text style={styles.btnTitle}>Connexion</Text>
+                <Text onPress={()=> navigation.navigate('Acceuil')} style={styles.btnTitle}>Connexion</Text>
           </TouchableOpacity>
         </View> 
         <View style={styles.sign}>

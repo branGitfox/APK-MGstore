@@ -2,7 +2,10 @@
 MG-Store is a cross plateform that allows user to sell everything the want in condition it's legal. I notice that this repository is for the mobile version but you can reach the web version [here]() and the website [MG-Store]()
 
 ## That's how the application looks like
-<img src='./assets/screenShoot/3.jpg' />
+<img src='./assets/screenShoot/4.jpg' />
+<img src='./assets/screenShoot/5.jpg' />
+<img src='./assets/screenShoot/6.jpg' />
+<img src='./assets/screenShoot/7.jpg' />
 <img src='./assets/screenShoot/2.jpg' />
 <img src='./assets/screenShoot/1.jpg' />
 
