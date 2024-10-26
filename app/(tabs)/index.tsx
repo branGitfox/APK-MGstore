@@ -5,6 +5,7 @@ import Home from "@/components/Home";
 import Shop from "@/components/ShoppingCart";
 import Sell from "@/components/Sell";
 import Loader from "@/components/Loader";
+import Login from "@/components/Login";
 
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +27,11 @@ export default function MyStack() {
         <Stack.Screen
           name="Vendre"
           component={Sell}
+          options={{ headerShown: false }}
+        />
+                <Stack.Screen
+          name="Login"
+          component={Login}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

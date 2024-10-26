@@ -4,7 +4,7 @@ import { View, StyleSheet, Image, ActivityIndicator} from 'react-native'
 export default function Loader({navigation}){
     useEffect(()=>{
         setTimeout(() =>{
-            navigation.navigate('Acceuil')
+            navigation.navigate('Login')
         }, 2000)
     })
   return (
