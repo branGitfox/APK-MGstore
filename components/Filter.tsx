@@ -22,7 +22,7 @@ export default function Filter() {
             Toutes
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[style.actionBtn, style.look]}>
+        <TouchableOpacity style={[style.actionBtn, style.dis]}>
           <Text style={style.btntext}>
             Vestimentaire
           </Text>

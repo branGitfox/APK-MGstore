@@ -17,7 +17,7 @@ import { FontAwesome } from "@expo/vector-icons";
 export default function Product() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Nos Produits <FontAwesome name="star" size={20} color={'gold'}/></Text>
+      <Text style={styles.title}>Nos produits <FontAwesome name="star" size={20} color={'gold'}/></Text>
       <ScrollView style={{ paddingTop: 2 }}>
         <View style={styles.product}>
           <Image
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     color: "black",
-    marginBottom: 10,
+    marginBottom: 20,
   },
 
   //style du produit
