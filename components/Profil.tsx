@@ -17,6 +17,7 @@ export default function Profil() {
         <TouchableOpacity style={styles.logOut}>
             <Text style={styles.logOutText}>Deconnexion <FontAwesome name='arrow-right'/></Text>
         </TouchableOpacity>
+        <View style={styles.line}/>
      </View>
   )
 }
@@ -54,6 +55,7 @@ const styles = StyleSheet.create({
         top:197
     },
 
+    //style du bouton de deconnexion
     logOut:{
         marginTop:20,
         backgroundColor:'red',
@@ -61,7 +63,17 @@ const styles = StyleSheet.create({
         padding:10
     },
 
+    //style du text du boutton de deconnexion
     logOutText:{
         color:'white'
+    },
+
+    //style de la ligne separatrice
+    line:{
+
+        borderColor:'gray',
+        borderWidth:.5,
+        width:230,
+        marginTop:15
     }
 })
