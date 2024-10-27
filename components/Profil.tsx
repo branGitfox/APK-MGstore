@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Image, Text, StyleSheet} from 'react-native'
+import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native'
 import { FontAwesome } from '@expo/vector-icons'
 
 /**
@@ -12,8 +12,11 @@ export default function Profil() {
   return (
     <View style={styles.container}>
         <Image style={styles.image} width={200}  height={200} source={require('../assets/images/img1.avif')}/>
-        <FontAwesome style={styles.camera} size={20} name='camera'/>
+        <FontAwesome style={styles.camera} size={20} name='camera' color={'gray'}/>
         <Text style={styles.name}>Brandon Fidelin <FontAwesome size={20} color={'green'} name='pencil'/></Text>
+        <TouchableOpacity style={styles.logOut}>
+            <Text style={styles.logOutText}>Deconnexion <FontAwesome name='arrow-right'/></Text>
+        </TouchableOpacity>
      </View>
   )
 }
@@ -49,5 +52,16 @@ const styles = StyleSheet.create({
         position:'absolute',
         left:250,
         top:197
+    },
+
+    logOut:{
+        marginTop:20,
+        backgroundColor:'red',
+        borderRadius:10,
+        padding:10
+    },
+
+    logOutText:{
+        color:'white'
     }
 })
