@@ -9,7 +9,11 @@ import { View, Text, Image, StyleSheet, TextInput } from "react-native";
  * @return {Header}
  */
 
-export default function Header() {
+export default function Header({nav}) {
+
+  const redirect = () => {
+    nav.navigate('Profil')
+  }
   return (
     <View>
       <View style={style.container}>
@@ -20,8 +24,8 @@ export default function Header() {
           />
           <Text style={style.title}>MG-Store</Text>
         </View>
-        <View style={style.shop}>
-          <Image style={style.userProfil} width={50} height={50} source={require('../assets/images/img1.avif')}/>
+        <View style={style.shop} onTouchStart={redirect}>
+          <Image style={style.userProfil} width={50} height={50} source={require('../assets/images/img1.avif')} />
         </View>
       </View>
       <View>

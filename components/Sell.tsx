@@ -40,7 +40,7 @@ export default function Sell({ navigation }) {
   };
   return (
     <View style={styles.container}>
-      <Header />
+      <Header nav={navigation}/>
       <View style={styles.formContainer}>
         <Text style={styles.title}>Vendre</Text>
         <View style={styles.formGroup}>

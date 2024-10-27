@@ -16,7 +16,7 @@ import Footer from '@/components/Footer'
 export default function Home({navigation}) {
   return (
     <View style={style.container}>
-        <Header/>
+        <Header nav={navigation}/>
         <Search/>
         <Filter/>
         <Product/>
