@@ -8,6 +8,7 @@ import {
   Button
 } from "react-native";
 
+
 /**
  *Va returner le composant de connexion
  *
@@ -19,6 +20,8 @@ export default function Login({navigation}) {
   const redirect = (page:string):any => {
     navigation.navigate(page)
   }
+
+
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={require("../assets/images/mgstore.png")} />
