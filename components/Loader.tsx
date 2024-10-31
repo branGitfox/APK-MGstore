@@ -9,6 +9,7 @@ export default function Loader({navigation}){
     })
   return (
     <View style={styles.container}>
+        <Image style={styles.image2} source={require('../assets/screenShoot/ispm.jpeg')}/>
         <Image style={styles.image} source={require('../assets/images/mgstore.png')}/>
         <ActivityIndicator color={'white'}/>
     </View>
@@ -27,5 +28,10 @@ const styles = StyleSheet.create({
     image:{
         width:300,
         height:300
+    },
+
+    image2:{
+        width:200,
+        height:200
     }
 })
