@@ -2,7 +2,8 @@
 MG-Store is a cross plateform that allows user to sell everything the want in condition it's legal. I notice that this repository is for the mobile version but you can reach the web version [here]() and the website [MG-Store]()
 
 ## Stacks
-React Native, Expo Go
+React Native, Expo Go, Node js
+
 ## That's how the application looks like
 <img src='./assets/screenShoot/4.jpg' />
 <img src='./assets/screenShoot/5.jpg' />
